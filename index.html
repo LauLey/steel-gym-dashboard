@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de administración - Steel Gym</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-steelgym">Steel Gym</div>
+        <div class="header-admin">Administrador</div>
+        <div class="header-notifications">Notificaciones</div>
+        <div class="header-datetime">Fecha y hora</div>
+        <search>
+            <form action="/buscar" method="get">
+                <label for="busqueda">🔍</label>
+                <input type="search" id="busqueda"
+                name="busqueda"
+                placeholder="Buscar usuarios, productos, ventas, etc ...">
+            </form>
+        </search>
+    </header>
+
+    <aside class="sidebar">
+        <nav>
+            <section class="principal_operation">
+                <h2>Operación Principal</h2>
+                    <ul class="principal_operation_list">
+                        <li class="sidebar_item">
+                            <a href="#">🖥️ Dashboard</a></li>
+                        <li class="sidebar_item">
+                            <a href="#">📊 Ventas y Caja</a></li>
+                        <li class="sidebar_item">
+                            <a href="#">🎟️ Membresías</a></li>
+                        <li class="sidebar_item">
+                            <a href="#">📝 Inscripciones</a></li>
+                        <li class="sidebar_item">
+                            <a href="#">✅ Asistencias</a></li>
+                        <li class="sidebar_item">
+                            <a href="#">👥 Clientes / Base de datos</a></li>
+                        <li class="sidebar_item">
+                            <a href="#">🪪 Personal</a></li>
+                        <li class="sidebar_item">
+                            <a href="#">🏋️ Entrenadores personales</a></li>
+                        <li class="sidebar_item">
+                            <a href="#">📦 Inventario</a></li>
+                        <li class="sidebar_item">
+                            <a href="#">🏬 Inventario (Consignación)</a></li>
+                        <li class="sidebar_item">
+                            <a href="#">🗓️ Rentas</a></li>
+                        <li class="sidebar_item">
+                            <a href="#">🛠️ Máquinas y mantenimiento</a></li>
+                    </ul>
+            </section>
+
+            <section class="reports">
+                <h2>Reportes</h2>
+                    <ul class="reports_list">
+                        <li class="sidebar_item">
+                            <a href="#">📊 Reportes de Ventas</a></li>
+                        <li class="sidebar_item">
+                            <a href="#">📈 Reportes Financieros</a></li>
+                        <li class="sidebar_item">
+                            <a href="#">🏆 Productos más vendidos</a></li>
+                    </ul>
+            </section>
+
+            <section class="communication">
+                <h2>Comunicación y Marketing</h2>
+                    <ul class="communication_list">
+                        <li class="sidebar_item">
+                            <a href="#">🌐 Redes Sociales</a></li>
+                        <li class="sidebar_item">
+                            <a href="#">💡 Próximos Contenidos</a></li>
+                    </ul>
+            </section>
+
+            <section class="reminders">
+                <h2>Recordatorios y Eventos</h2>
+                    <ul class="reminders_list">
+                        <li class="sidebar_item">
+                            <a href="#">📅 Agenda / Eventos</a></li>
+                        <li class="sidebar_item">
+                            <a href="#">🔔 Recordatorios y Tareas</a></li>
+                        <li class="sidebar_item">
+                            <a href="#">🎂 Cumpleaños</a></li>
+                    </ul>
+            </section>
+
+            <section class="configuration">
+                <h2>Configuración</h2>
+                    <ul class="configuration_list">
+                        <li class="sidebar_item">
+                            <a href="#">⚙️ Configuración</a></li>
+                        <li class="sidebar_item">
+                            <a href="#">👤 Usuarios del Sistema</a></li>
+                        <li class="sidebar_item">
+                            <a href="#">📴 Cerrar Sesión</a></li>
+                    </ul>
+            </section>
+        </nav>
+        
+        
+    </aside>
+
+    <main class="main">
+        <section class="metrics">
+            <div class="metrics-card">
+                <h3>MIEMBROS ACTIVOS</h3>
+            </div>
+            <div class="metrics-card">
+                <h3>MIEMBROS INACTIVOS</h3>
+            </div>
+            <div class="metrics-card">
+                <h3>INSCRIPCIONES NUEVAS</h3>
+            </div>
+            <div class="metrics-card">
+                <h3>INGRESOS HOY</h3>
+            </div>
+            <div class="metrics-card">
+                <h3>ASISTENCIAS HOY</h3>
+            </div>
+            <div class="metrics-card">
+                <h3>VISITAS HOY</h3>
+            </div>
+        </section>
+
+        <section class="summary">
+            <div class="summary-card">
+                <h3>RESUMEN DE INGRESOS</h3>
+            </div>
+            <div class="summary-card">
+                <h3>VENTAS POR ÁREA</h3>
+            </div>
+            <div class="summary-card">
+                <h3>MEMBRESÍAS</h3>
+            </div>
+            <div class="summary-card">
+                <h3>REDES SOCIALES</h3>
+            </div>
+        </section>
+
+        <section class="operations">
+            <div class="operations-card">
+                <h3>CORTE DE CAJA</h3>
+            </div>
+            <div class="operations-card">
+                <h3>PENDIENTES</h3>
+            </div>
+            <div class="operations-card">
+                <h3>MÁQUINAS</h3>
+            </div>
+            <div class="operations-card">
+                <h3>CUMPLEAÑOS</h3>
+            </div>
+        </section>
+
+        <section class="activities">
+            <div class="activities-card">
+                <h3>PRÓXIMO EVENTO</h3>
+            </div>
+            <div class="activities-card">
+                <h3>PRODUCTOS MÁS VENDIDOS</h3>
+            </div>
+            <div class="activities-card">
+                <h3>ASISTENCIA</h3>
+            </div>
+            <div class="activities-card">
+                <h3>PRÓXIMOS CONTENIDOS</h3>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="footer_copyright">
+            <p>🌐 © 2026 LAURA LEYVA - STEEL GYM</p>
+        </div>
+        <div class="footer_information">
+            <p> san Antonio 7ma secc, Tlalixtac de cabrera</p>
+            <p>814 892 1029</p>
+            <p>📧 Steelgym.oficial@outlook.com</p>
+        </div>
+
+        <div class="social">
+            <a href="https://www.tiktok.com/discover/steel-gym-oaxaca"
+            class="social_link" target="_blank" rel="noopener noreferrer">【ꚠ】</a>
+            <a href="https://www.instagram.com/steelgym.official"
+            class="social_link" target="_blank" rel="noopener noreferrer">🅾</a>
+            <a href="https://www.facebook.com/p/Steel-Gym-61575544503388/"
+            class="social_link" target="_blank" rel="noopener noreferrer">ⓕ</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -88,6 +88,9 @@ body {
     font-family: var(--font-primary);
     background-color: var(--color-bg);
     color: var(--color-text-primary);
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: auto 7fr auto;
 }
 
 a {
@@ -116,6 +119,12 @@ select {
     background-color: var(--color-bg-secondary);
     border-bottom: 1px solid var(--color-border);
     box-shadow: var(--shadow-header);
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .header-steelgym {
@@ -153,7 +162,7 @@ select {
     outline: none;
 }
 
-.header input[type="search"]::placeholder {
+.header input[type="search"]::placeholder {                                                                                                     
     color: var(--color-text-muted);
 }
 
@@ -165,6 +174,8 @@ select {
     background-color: #050607;
     border-right: 1px solid var(--color-border);
     color: var(--color-text-secondary);
+    grid-column: 1;
+    grid-row: 1/-1;
 }
 
 .sidebar h2 {
@@ -201,6 +212,19 @@ select {
 .main {
     background-color: var(--color-bg);
     color: var(--color-text-primary);
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto auto auto auto;
+    gap: 15px;
+}
+
+.metrics {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
 }
 
 .metrics-card {
@@ -223,6 +247,29 @@ select {
     font-weight: 600;
 }
 
+.summary {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1.25fr 1.25fr;
+    gap: 15px;
+}
+
+.operations {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: 1.8fr 1.2fr 1.8fr 1.2fr;
+    gap: 15px;
+}
+
+.activities {
+    grid-column: 1 / -1;
+    grid-row: 4;
+    display: grid;
+    grid-template-columns: 1.2fr 1.8fr 1.8fr 1.2fr;
+    gap: 15px;
+}
 
 .summary-card h3,
 .operations-card h3,
@@ -254,6 +301,17 @@ select {
     border-top: 1px solid var(--color-border);
     color: var(--color-text-muted);
     font-size: 0.8rem;
+    grid-column: 2;
+    grid-row: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer_information {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .footer_information p {
@@ -267,4 +325,38 @@ select {
 
 .social_link:hover {
     color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+
+    .metrics {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .summary {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .operations {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .activities {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .metrics {
+        grid-template-columns: 1fr;
+    }
+
+    .summary,
+    .operations,
+    .activities {
+        grid-template-columns: 1fr;
+    }
+
 }
